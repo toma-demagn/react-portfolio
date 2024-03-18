@@ -53,12 +53,6 @@ const StyledHero = styled.header`
     height: 10rem;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    .hero-img {
-      animation: ${Spin} infinite 20s linear;
-    }
-  }
-
   @media screen and (min-width: 1180px) {
     &::before {
       background: ${({ theme }) =>
@@ -92,13 +86,6 @@ export default function Hero() {
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
             </div>
-          </Col>
-          <Col className="d-none d-md-block">
-            <img
-              src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
-            />
           </Col>
         </Row>
         <Row className="align-items-end down-container">

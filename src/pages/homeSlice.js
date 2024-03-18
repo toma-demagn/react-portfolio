@@ -21,6 +21,8 @@ export const fetchGitHubInfo = createAsyncThunk(
         return res;
       });
       const data = await response.json();
+      data["linkedUrl"] = "https://linkedin.com/in/thomas-de-magnienville"; // good ol hardcoding
+      data["name"] = "Thomas de Magnienville"; // good ol hardcoding
       return data;
     } catch (err) {
       return rejectWithValue(

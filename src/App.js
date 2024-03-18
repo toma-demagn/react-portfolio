@@ -11,7 +11,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import { Element } from "react-scroll";
 import { ThemeProvider } from "styled-components";
 // Data
-import { navLogo } from "./data";
+import Logo from './images/thomas.png';
 // Components
 import { Container } from "react-bootstrap";
 import { Loading } from "./components/globalStyledComponents";
@@ -23,7 +23,7 @@ import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
 
-const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const lightMode = window.matchMedia("(prefers-color-scheme: light)").matches;
 const themes = {
   light: {
     name: "light",
@@ -46,7 +46,7 @@ export default function App() {
   React.useEffect(
     function () {
       const updateTheme = () =>
-        darkMode ? setTheme("dark") : setTheme("light");
+        lightMode ? setTheme("dark") : setTheme("light");
       updateTheme();
       dispatch(fetchGitHubInfo());
       dispatch(fetchGitHubReops());
@@ -85,7 +85,7 @@ export default function App() {
           <ScrollToTop />
           <GlobalStyles />
           <Element name={"Home"} id="home">
-            <NavBar Logo={navLogo} />
+            <NavBar Logo={Logo} />
           </Element>
           <Routes>
             <Route exact path="/" element={<Home />} />

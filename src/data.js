@@ -5,7 +5,10 @@ import { Icon } from "@iconify/react";
 // import newLogo from "./images/yourFileName"
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+//import Logo from "./images/logo.svg";
+import Logo from "./images/GH.svg";
+import LogoOutpace from "./images/outpace.png";
+import LogoISS from "./images/space-station.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -18,10 +21,8 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "toma-demagn";
 
-// Navbar Logo image
-export const navLogo = undefined;
 
 // Blog link icon - https://icon-sets.iconify.design/
 export const Blog = <Icon icon="ph:link-bold" />;
@@ -92,13 +93,17 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["outpace", "ISS_status", "Calisthenics-Posture-Fixer"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "outpace",
+    image: LogoOutpace,
+  },
+  {
+    name: "ISS_status",
+    image: LogoISS,
   },
 ];
 
