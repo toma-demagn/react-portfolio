@@ -1,6 +1,6 @@
 {
-  "name": "github-react-portfolio",
-  "homepage": "https://toma-demagn.github.io/toma-demagn.github.io",
+  "name": "react-portfolio",
+  "homepage": "https://toma-demagn.github.io/react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
