@@ -17,6 +17,7 @@ export default function Skills() {
             <h2>Skills</h2>
             <div className="underline"></div>
           </Title>
+          <h4>(Through work and personal projects)</h4>
           <Row className="mt-3 align-items-center">
             {skillData.map((skills) => {
               return (

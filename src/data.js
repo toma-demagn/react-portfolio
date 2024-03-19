@@ -58,7 +58,7 @@ export const skillData = [
   },
   {
     id: 4,
-    skill: <Icon icon="cib:docker-icon" className="display-4" />,
+    skill: <Icon icon="fa-brands:docker" className="display-4" />,
     name: "Docker",
   },
   {
