@@ -29,7 +29,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
 */
 export const moreInfo =
   "I'm a Software and Data engineer. I enjoy learning about new technologies that " +
-    "could benefit my creating abilities. In parallel, I am also a cyclist and calisthenics practionner, I have worked on " +
+    "could benefit my creative abilities. I am also a cyclist and calisthenics practionner, I have worked on " +
     "personal projects I can use to improve in these fields. Take a look at my projects below !";
 
 /* Skills
