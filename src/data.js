@@ -10,8 +10,8 @@ import LogoISS from "./images/space-station.png";
 import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
 // If you change the import names above then you need to change the export names below
-export { HeroLight as Light };
-export { HeroDark as Dark };
+export { HeroLight as LightBackground };
+export { HeroDark as DarkBackground };
 
 /* START HERE
  **************************************************************

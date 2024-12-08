@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Icon } from "@iconify/react";
 // Media
 import Logo from "../images/logo.svg";
-import { Light, Dark } from "../data";
+import { LightBackground, DarkBackground } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Spin } from "./globalStyledComponents";
@@ -57,8 +57,8 @@ const StyledHero = styled.header`
     &::before {
       background: ${({ theme }) =>
         theme.name === "light"
-          ? `url(${Light}) top center fixed no-repeat`
-          : `url(${Dark}) top center fixed no-repeat`};
+          ? `url(${LightBackground}) top center fixed no-repeat`
+          : `url(${DarkBackground}) top center fixed no-repeat`};
       background-size: 100vw auto;
     }
   }
@@ -67,8 +67,8 @@ const StyledHero = styled.header`
     &::before {
       background: ${({ theme }) =>
         theme.name === "light"
-          ? `url(${Light}) center center fixed no-repeat`
-          : `url(${Dark}) center center fixed no-repeat`};
+          ? `url(${LightBackground}) center center fixed no-repeat`
+          : `url(${DarkBackground}) center center fixed no-repeat`};
       background-size: cover;
     }
   }

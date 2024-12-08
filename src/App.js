@@ -46,7 +46,7 @@ export default function App() {
   React.useEffect(
     function () {
       const updateTheme = () =>
-        lightMode ? setTheme("dark") : setTheme("light");
+        lightMode ? setTheme("light") : setTheme("dark");
       updateTheme();
       dispatch(fetchGitHubInfo());
       dispatch(fetchGitHubReops());
@@ -55,9 +55,9 @@ export default function App() {
   );
 
   window
-    .matchMedia("(prefers-color-scheme: dark)")
+    .matchMedia("(prefers-color-scheme: light)")
     .addEventListener("change", (e) =>
-      e.matches ? setTheme("dark") : setTheme("light")
+      e.matches ? setTheme("light") : setTheme("dark")
     );
 
   if (isLoading) {

@@ -9,7 +9,9 @@ import {moreInfo} from "../data";
 // Components
 import {Col, Container, Row} from "react-bootstrap";
 import {Title} from "./globalStyledComponents";
-import cnesLogo from '../images/cnes_logo.png';
+import exotrailLogoDark from '../images/exotrail_logo-dark.png';
+import exotrailLogoLight from '../images/exotrail_logo-light.png';
+import {useAppContext} from "../appContext";
 
 
 
@@ -26,6 +28,8 @@ const StyledAboutMe = styled.section`
 
 export default function AboutMe() {
     const {avatar_url, bio} = useSelector(selectData);
+    const { theme } = useAppContext();
+    const exotrailLogo = theme === "light" ? exotrailLogoLight : exotrailLogoDark;
 
     return (
         <Element name={"About"} id="about">
@@ -55,7 +59,7 @@ export default function AboutMe() {
                         </Col>
                     </Row>
                     <Container className="mt-xxl-5 text-center">
-                        <h3>Current position: Space surveillance at <img src={cnesLogo} alt="CNES Logo" style={{height: '1.3em'}}/></h3>
+                        <h3>Current position: Software engineer at <img src={exotrailLogo} alt="Exotrail Logo" style={{height: '1.3em'}}/></h3>
                         <p><FontAwesomeIcon icon={faMapMarkerAlt}/> Toulouse, France</p>
                     </Container>
                 </Container>
