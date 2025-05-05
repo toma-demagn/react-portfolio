@@ -29,7 +29,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
 */
 export const moreInfo =
   "I'm a Software and Data engineer. I enjoy learning about new technologies that " +
-    "could benefit my creative abilities. I am also a cyclist and calisthenics practionner, I have worked on " +
+    "could benefit my creative abilities. I am also a cyclist and calisthenics practitioner, I have worked on " +
     "personal projects I can use to improve in these fields. Take a look at my projects below !";
 
 /* Skills
@@ -91,7 +91,7 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["outpace", "ISS_status", "Calisthenics-Posture-Fixer"];
+export const filteredProjects = ["Sport-Posture-Fixer", "outpace"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
