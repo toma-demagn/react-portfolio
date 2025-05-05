@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 // Projects Images (add your images to the images directory and import below)
 import LogoOutpace from "./images/outpace.png";
-import LogoISS from "./images/space-station.png";
+import LogoMotion from "./images/motion-tracking.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -100,8 +100,8 @@ export const projectCardImages = [
     image: LogoOutpace,
   },
   {
-    name: "ISS_status",
-    image: LogoISS,
+    name: "Sport-Posture-Fixer",
+    image: LogoMotion,
   },
 ];
 
